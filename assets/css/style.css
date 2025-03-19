@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .column-3{
+    width: 33%;
+    height: 300px;
+    margin: 0 0.5%;
+    background-color: aquamarine;
+}
+.d-flex{
+    display: flex;
+}
+
+@media(max-width:768px){
+    .column-3{
+        width: 100%;
+        margin: 0.5% 0;
+    }
+    .c-box{
+        flex-direction: column;
+    }
+} */
+
+img{
+    width: 100%;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+/* img가 들어가면 border-radius는 div에 적용되며,
+img가 border 바깥으로 넘어가 적용되지 않는 것으로 보임 
+그럴 경우 overflow: hidden;를 사용하여 이미지를 div 안으로 묶어줌*/
+
+.column-3{
+    width: 25%;
+    padding: 50px 10px;
+    background-color: rgba(255, 255, 255, .3);
+    margin: 20px 0.5%;
+    border: 1px solid rgba(255, 255, 255, .3);
+    backdrop-filter: blur(20px);
+    filter: drop-shadow(4px 4px 10px yellowgreen);
+
+    /* opacity: .8; */
+    /* filter: blur(20px); box 전체 요소에 적용됨 */
+    /* filter: drop-shadow(4px 4px 10px blue); */
+    /* backdrop-filter: hue-rotate(200deg); deg는 각도 단위*/
+    /* backdrop-filter: blur(20px); */
+    /* backdrop-filter: invert(90%); 반전 */
+    /* backdrop-filter: sepia(90%); */
+}
+.row{
+    display: flex;
+}
+.sec_01{
+    height: 100vh; /*어지간하면 쓰지말기 vh, vw*/
+    background: url('../img/person.jpg');
+}
